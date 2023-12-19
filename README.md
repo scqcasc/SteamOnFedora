@@ -1,5 +1,23 @@
 # Steam On Fedora
-I'd been using Windows 11 for about a year on this PC.  It's an AMD Ryzen 7 5800X CPU with an AMD Radeon 5800 GPU.  It worked fine at first, but then somewhere along the line I noticed the graphics performance was degrading.  Plus I was not happy with things I'd read about Windows 11 and it's propensity advertise your existence to every Tom Dick and Harry on the Internet before you even log in.  I'd read that Steam was doing great things on Linux using the Proton emulation layer, so I decided to give it a try.   I put a new NVME drive in and loaded up Fedora 39 Workstation.  I chose this one because it supports UEFI.  
+## PC Specs
+## Hardware Information:
+- **Hardware Model:**                              Micro-Star International Co., Ltd. MS-7D53
+- **Memory:**                                      64.0 GiB
+- **Processor:**                                   AMD Ryzen™ 7 5800X × 16
+- **Graphics:**                                    AMD Radeon™ RX 6600
+- **Disk Capacity:**                               3.0 TB
+
+## Software Information:
+- **Firmware Version:**                            1.40
+- **OS Name:**                                     Fedora Linux 39 (Workstation Edition)
+- **OS Build:**                                    (null)
+- **OS Type:**                                     64-bit
+- **GNOME Version:**                               45.2
+- **Windowing System:**                            Wayland
+- **Kernel Version:**                              Linux 6.6.6-200.fc39.x86_64
+
+
+I'd been using Windows 11 for about a year on this PC.  It worked fine at first, but then somewhere along the line I noticed the graphics performance was degrading.  Plus I was not happy with things I'd read about Windows 11 and it's propensity advertise your existence to every Tom Dick and Harry on the Internet before you even log in.  I'd read that Steam was doing great things on Linux using the Proton emulation layer, so I decided to give it a try.   I put a new NVME drive in and loaded up Fedora 39 Workstation.  I chose this one because it supports UEFI.  
 
 Personal note:  I am a long time Unix / Linux system admin.  I do HPC configuration for a living, so getting into this is not a scary proposition.  However, I'm at the age now where when I'm not working, I don't want to work ... know what I'm saying?  This is my gaming PC.  I do not want it to become a job in order to play some games.  I want to get the most out of my hardware.  i want to good, clean, and responsive interface.  Decent email, WhatsApp, and Spotify clients are important too.  If we meet these criteria, I'm happy.
 
