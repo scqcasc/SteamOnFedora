@@ -1,7 +1,10 @@
 # Steam On Fedora
 I'd been using Windows 11 for about a year on this PC.  It's an AMD Ryzen 7 5800X CPU with an AMD Radeon 5800 GPU.  It worked fine at first, but then somewhere along the line I noticed the graphics performance was degrading.  Plus I was not happy with things I'd read about Windows 11 and it's propensity advertise your existence to every Tom Dick and Harry on the Internet before you even log in.  I'd read that Steam was doing great things on Linux using the Proton emulation layer, so I decided to give it a try.   I put a new NVME drive in and loaded up Fedora 39 Workstation.  I chose this one because it supports UEFI.  
 
-Personal note:  I am a long time Unix / Linux system admin.  I do HPC configuration for a living, so getting into this is not a scary proposition.  However, I'm at the age now where when I'm not working, I don't want to work ... know what I'm saying?  This is my gaming PC.  I do not want it to become a job in order to play some games.  
+Personal note:  I am a long time Unix / Linux system admin.  I do HPC configuration for a living, so getting into this is not a scary proposition.  However, I'm at the age now where when I'm not working, I don't want to work ... know what I'm saying?  This is my gaming PC.  I do not want it to become a job in order to play some games.  I want to get the most out of my hardware.  i want to good, clean, and responsive interface.  Decent email, WhatsApp, and Spotify clients are important too.  If we meet these criteria, I'm happy.
+
+## Fedora Installation
+Not much to say here.  Write the installer to a USB, boot from it.  Pick the right disk.  Next, next, next.  I picked all the defaults and made choices when required.  It was easy.  One thing I will say though is there was nothing special involved with the ADM Radeon GPU.  Apparently these are ready to go out of the box.  None of the nVidia, rebuild kernel heartache required.  And when I started loading up a game from Steam, I was amazed at the performance.  But more on that later.
 
 ## Install Steam
 Very easy.  Opened the Fedora Software tool and searched for Steam then installed it and logged into my account.
