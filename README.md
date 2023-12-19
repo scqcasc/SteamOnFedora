@@ -3,6 +3,8 @@ I'd been using Windows 11 for about a year on this PC.  It's an AMD Ryzen 7 5800
 
 Personal note:  I am a long time Unix / Linux system admin.  I do HPC configuration for a living, so getting into this is not a scary proposition.  However, I'm at the age now where when I'm not working, I don't want to work ... know what I'm saying?  This is my gaming PC.  I do not want it to become a job in order to play some games.  I want to get the most out of my hardware.  i want to good, clean, and responsive interface.  Decent email, WhatsApp, and Spotify clients are important too.  If we meet these criteria, I'm happy.
 
+Another note:  Some things did not work as expected.  Most things did, and one or two took a little bit of trial and error to get right.  But on a couple topics I did give up on the initial solution and looked for alternatives.  Remember, this is not my job.  I know there is always a solution.  Sometimes it involves looking at the problem differently.  
+
 ## Fedora Installation
 Not much to say here.  Write the installer to a USB, boot from it.  Pick the right disk.  Next, next, next.  I picked all the defaults and made choices when required.  It was easy.  One thing I will say though is there was nothing special involved with the ADM Radeon GPU.  Apparently these are ready to go out of the box.  None of the nVidia, rebuild kernel heartache required.  And when I started loading up a game from Steam, I was amazed at the performance.  But more on that later.
 
