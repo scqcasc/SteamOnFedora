@@ -105,3 +105,17 @@ Since /home uses BTRFS I can use snapshots to protect the game directories.
 I tested FO4 and it still works.  Now will be able to use the btrfs command to create snap shots before adding further mods.  Now need to create a btrfs partition to store the snapshots.  Meantime, I created first snapshot using 
 
 > $ sudo btrfs subvolume snapshot -r ~/.local/share/Steam/steamapps/common/Fallout\ 4 .snapshots/FO4-1
+>
+
+## Performance
+My favourite game is (obviously) Fallout 4.  In truth I'm a little obsessed with it.  So, when I think about gaming performance I'm thinking about the experience of running around the Commonwealth.  When I compare that experience in the two platforms Linux outperforms by nearly a factor of 2.  The average frame rate I see in Windows is around 30.  In Linux, it's 55 - 60.  
+
+(post some screen shots)
+
+Interestingly I ran the Gravity Mark (https://gravitymark.tellusim.com/) utility on both OS's.  Using a full screen Vulcan API benchmark the scores and FPS rates were very close:
+
+![image](https://github.com/scqcasc/SteamOnFedora/assets/106348300/bbb4cafa-9c5d-4956-8684-e442489bdd53)
+
+I attribute Windows' slight edge in score to propriatary drivers.  Linux's FPS were slightly higher (55.4) than Windows' (54.7).  For either metric the difference is negligeable.  
+
+So why the dramatic improvement in a nine year old Windows game running through the Proton emulator?  Hmmm.  Some interesting things going on in that Proton layer I feel. 
