@@ -1,5 +1,11 @@
 # Steam On Fedora
 
+## Intro
+I'd been using Windows 11 for about a year on this PC.  It worked fine at first, but then somewhere along the line I noticed the graphics performance was degrading.  Plus I was not happy with things I'd read about Windows 11 and it's propensity advertise your existence to every Tom, Dick, and Harry on the Internet before you even log in.  I'd read that Steam was doing great things on Linux using the Proton emulation layer, so I decided to give it a try.   I put a new NVME drive in and loaded up Fedora 39 Workstation.  I chose this one because it supports UEFI.  
+
+Personal note:  I am a long time Unix / Linux system admin.  I do HPC configuration for a living, so getting into this is not a scary proposition.  However, I'm at the age now where when I'm not working, I don't want to work ... know what I'm saying?  This is my gaming PC.  I do not want it to become a job in order to play some games.  I want to get the most out of my hardware.  i want to good, clean, and responsive interface.  Decent email, WhatsApp, and Spotify clients are important too.  If we meet these criteria, I'm happy.  Also, for anyone reading this who isn't a Linux administrator, don't worry.  So far there hasn't been anything that requires mad computer skills.  So long as you are able to follow directions, copy and paste files, make some minore edits to text files, you'll be fine.
+
+Another note:  Some things did not work as expected.  Most things did, and one or two took a little bit of trial and error to get right.  But on a couple topics I did give up on the initial solution and looked for alternatives.  Remember, this is not my job.  I know there is always a solution.  Sometimes it involves looking at the problem differently.  
 ## PC Specs
 ## Hardware Information:
 - **Hardware Model:**                              Micro-Star International Co., Ltd. MS-7D53
@@ -17,12 +23,6 @@
 - **Windowing System:**                            Wayland
 - **Kernel Version:**                              Linux 6.6.6-200.fc39.x86_64
 
-
-I'd been using Windows 11 for about a year on this PC.  It worked fine at first, but then somewhere along the line I noticed the graphics performance was degrading.  Plus I was not happy with things I'd read about Windows 11 and it's propensity advertise your existence to every Tom, Dick, and Harry on the Internet before you even log in.  I'd read that Steam was doing great things on Linux using the Proton emulation layer, so I decided to give it a try.   I put a new NVME drive in and loaded up Fedora 39 Workstation.  I chose this one because it supports UEFI.  
-
-Personal note:  I am a long time Unix / Linux system admin.  I do HPC configuration for a living, so getting into this is not a scary proposition.  However, I'm at the age now where when I'm not working, I don't want to work ... know what I'm saying?  This is my gaming PC.  I do not want it to become a job in order to play some games.  I want to get the most out of my hardware.  i want to good, clean, and responsive interface.  Decent email, WhatsApp, and Spotify clients are important too.  If we meet these criteria, I'm happy.  Also, for anyone reading this who isn't a Linux administrator, don't worry.  So far there hasn't been anything that requires mad computer skills.  So long as you are able to follow directions, copy and paste files, make some minore edits to text files, you'll be fine.
-
-Another note:  Some things did not work as expected.  Most things did, and one or two took a little bit of trial and error to get right.  But on a couple topics I did give up on the initial solution and looked for alternatives.  Remember, this is not my job.  I know there is always a solution.  Sometimes it involves looking at the problem differently.  
 
 ## Fedora Installation
 Not much to say here.  Write the installer to a USB, boot from it.  Pick the right disk.  Next, next, next.  I picked all the defaults and made choices when required.  It was easy.  One thing I will say though is there was nothing special involved with the ADM Radeon GPU.  Apparently these are ready to go out of the box.  None of the nVidia, rebuild kernel heartache required.  And when I started loading up a game from Steam, I was amazed at the performance.  But more on that later.
@@ -118,4 +118,10 @@ Interestingly I ran the Gravity Mark (https://gravitymark.tellusim.com/) utility
 
 I attribute Windows' slight edge in score to propriatary drivers.  Linux's FPS were slightly higher (55.4) than Windows' (54.7).  For either metric the difference is negligeable.  
 
-So why the dramatic improvement in a nine year old Windows game running through the Proton emulator?  Hmmm.  Some interesting things going on in that Proton layer I feel. 
+So why the dramatic improvement in a nine year old Windows game running through the Proton emulator?  Hmmm.  Some interesting things going on in that Proton layer I feel.  There are details about Proton available here: https://github.com/ValveSoftware/Proton.  There are options available that can help performance of some games.  So far I've not had reason to dive into these, but good to know they exist.  
+
+Other games I've played so far.  I have used both keyboard and an Xbox controller with these.  I prefer the keyboard but Stray in particular needs a controller.
+* Stray
+* High On Life
+* Cyberpunk 2077
+* Atomic Heart
