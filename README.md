@@ -125,3 +125,10 @@ Other games I've played so far.  I have used both keyboard and an Xbox controlle
 * High On Life
 * Cyberpunk 2077
 * Atomic Heart
+
+## Other Issues
+Of course I do other things with this PC besides wander the wasteland.  Sometimes I want to print something.  the Settings | Printers tool found my Brother MFC WLAN printer no problem.  But I needed to search for it every time.  The reason was the "cups" printer service was not set to start at boot.  I ran this command:
+
+> $ sudo systemctl enable cups
+>
+and now after reboots my printer appears as normal.
