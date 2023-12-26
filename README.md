@@ -132,3 +132,6 @@ Of course I do other things with this PC besides wander the wasteland.  Sometime
 > $ sudo systemctl enable cups
 >
 and now after reboots my printer appears as normal.
+
+## Extra Info
+About two weeks after I started working on this document this video cam across my YouTube feed:  https://youtu.be/bq9O99TgFv4?si=0iqXea1kPEdnqeQR.  Give it a watch and a like.  He does a great job describing how the Steam Deck has elevated the Linux gaming experience.
