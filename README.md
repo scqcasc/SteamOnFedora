@@ -135,3 +135,23 @@ and now after reboots my printer appears as normal.
 
 ## Extra Info
 About two weeks after I started working on this document this video cam across my YouTube feed:  https://youtu.be/bq9O99TgFv4?si=0iqXea1kPEdnqeQR.  Give it a watch and a like.  He does a great job describing how the Steam Deck has elevated the Linux gaming experience.
+
+## FOEdit on Linux
+So far I have yet to do any mod creation in any PC game, but I am curious about how it is done.  So of course I have started looking at the tools needed to make mods.  FO4Edit tops the list.  I downloaded the exe from Nexus (https://www.nexusmods.com/fallout4/mods/2737) -- the 4.1.5 Experimental version (only because it's the latest and I have no history with this currently).  Once I downloaded it I extracted the contents and copied the two exe files and the 'Edit Scripts' directory to ~/.local/share/Steam/steamapps/common/Fallout 4.  Then I made a symbolic link of the Fallout4.ini file to my home directory:
+
+>
+> cd ~/Documents/My\ Games/Fallout4
+>
+> ln -s ~/.local/share/Steam/steamapps/compatdata/377160/pfx/drive_c/users/steamuser/My\ Documents/My\ Games/Fallout4/Fallout4.ini .
+>
+Once done I was able to start FO4Edit via the command line:
+
+> cd ~/.local/share/Steam/steamapps/common/Fallout 4
+> 
+> wine ./FO4Edit.exe
+>
+
+![image](https://github.com/scqcasc/SteamOnFedora/assets/106348300/15878746-f865-437a-a60b-9380dbac59cb)
+
+As you can see the fonts aren't fantastic.  But it starts up anyway. Next I'll make an icon for it and then I just need to learn some modding basics.  
+
