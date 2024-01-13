@@ -133,6 +133,17 @@ Of course I do other things with this PC besides wander the wasteland.  Sometime
 >
 and now after reboots my printer appears as normal.
 
+Another issue I found was that Firefox could not play any videos.  I kept seeing broken images where the videos should be in web sites.  I ran the following three commands in a terminal and that fixed the issue.
+
+>sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-plugin-libav --exclude=gstreamer1-plugins-bad-free-devel
+>
+>sudo dnf install lame\* --exclude=lame-devel
+>
+>sudo dnf group upgrade --with-optional Multimedia
+>
+
+THe above came from this site:  https://docs.fedoraproject.org/en-US/quick-docs/installing-plugins-for-playing-movies-and-music/
+
 ## Extra Info
 About two weeks after I started working on this document this video cam across my YouTube feed:  https://youtu.be/bq9O99TgFv4?si=0iqXea1kPEdnqeQR.  Give it a watch and a like.  He does a great job describing how the Steam Deck has elevated the Linux gaming experience.
 
