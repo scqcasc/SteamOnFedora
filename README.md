@@ -162,7 +162,35 @@ Once done I was able to start FO4Edit via the command line:
 > wine ./FO4Edit.exe
 >
 
+
 ![image](https://github.com/scqcasc/SteamOnFedora/assets/106348300/15878746-f865-437a-a60b-9380dbac59cb)
 
 As you can see the fonts aren't fantastic.  But it starts up anyway. Next I'll make an icon for it and then I just need to learn some modding basics.  
+
+
+# Bye Bye Windoze
+Today I blew away the Windows partitions on the 2TB nvme disk they were on and added the space to Fedora.  Now my disk usage looks like:
+![image](https://github.com/scqcasc/SteamOnFedora/assets/106348300/b888fea9-12af-47e4-bb71-c90e5f1b77be)
+
+Here are the commands used to achieve this:
+
+> sudo lsblk -f # to get the name of the Windows disk
+> 
+![image](https://github.com/scqcasc/SteamOnFedora/assets/106348300/32b07498-9d67-4898-86fc-6400e29179d3)
+
+Then I had to blow away the Windows partitions and make a brtfs partition
+> sudo parted /dev/nvme0n1
+> mklabel gpt
+> mkpart primary btrfs 4MiB 100%
+> print  # (to make sure it looked right)
+> quit
+>
+Then add the new partition to /
+> sudo btrfs device add /dev/nvme0n1p1 /
+
+When done
+
+![image](https://github.com/scqcasc/SteamOnFedora/assets/106348300/9b0e5180-d9b6-4fb3-a8df-5b515a5315bd)
+
+I rebooted to make sure everything still worked after.  No issues at all.
 
