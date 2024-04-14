@@ -194,3 +194,18 @@ When done
 
 I rebooted to make sure everything still worked after.  No issues at all.
 
+# Fedora on a Dell Precision Laptop
+Yeah, so I can't just stop there.  I have a Dell precision that is a couple years old that I wasn't doing much with, so I decided to dual boot it with Windows 11 and Fedora 39.  I've been learning more about game programming, so this way I can have a decent Windows machine to do a build on if the mood hits.  
+
+One issue I've found is occasionally after a system update the nVidia driver is unavailable.  It tells me at the login screen that it has failed back to nouveau.
+
+Apparently the upgrade script doesn't always complete the nVidia stuff for some reason.  The fix is simple:  log in and run
+
+```
+sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda
+suo akmods
+```
+Then reboot.  
+
+
+
