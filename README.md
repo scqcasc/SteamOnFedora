@@ -203,7 +203,7 @@ Apparently the upgrade script doesn't always complete the nVidia stuff for some 
 
 ```
 sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda
-suo akmods
+sudo akmods
 ```
 Then reboot.  
 
