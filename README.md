@@ -207,5 +207,19 @@ sudo akmods
 ```
 Then reboot.  
 
+# And Back to the AMD Machine ...
+I recently made two changes to improve the performance even more.  I installed gamemode (https://github.com/FeralInteractive/gamemode) and vkBasalt (https://github.com/DadSchoorse/vkBasalt).  The installation was easy enough on Fedora: 
+```
+https://github.com/FeralInteractive/gamemode
+```
+I tested the gamemode effectiveness by running 
+```
+gamemoded -t
+```
+and saw that all tests passed.  By default there were no optimisations being done on my GPU. I've decided to leave those out after reading some warnings about potential issues arising from doing so without caution.  As there is not a significant need for this at the moment, I decided to leave that part alone for now.
 
-
+To enable these two tools in the game go into the game properties in Steam and edited the Launch Options to contain:
+```
+ENABLE_VKBASALT=1; gamemoderun %command% -dx12
+```
+And the result so far has been excellent.  I hasd recent reloaded the game, removing all mods, and was seeing some framerate drops and skips.  After these changes I was back up to a very consistent 58 - 60 FPS.
