@@ -210,7 +210,7 @@ Then reboot.
 # And Back to the AMD Machine ...
 I recently made two changes to improve the performance even more.  I installed gamemode (https://github.com/FeralInteractive/gamemode) and vkBasalt (https://github.com/DadSchoorse/vkBasalt).  The installation was easy enough on Fedora: 
 ```
-https://github.com/FeralInteractive/gamemode
+sudo dnf install vkBasalt gamemode
 ```
 I tested the gamemode effectiveness by running 
 ```
